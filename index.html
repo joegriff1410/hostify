@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="/js/main.js" defer></script>
@@ -30,7 +30,7 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a href="/"><img src="/images/logo.svg" alt="company logo" /></a>
+        <a aria-label="Hostify" href="/"><img src="/images/logo.svg" alt="company logo" /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
@@ -80,6 +80,7 @@
         </header>
         <div class="input-group">
           <input
+            aria-label="Domain"
             type="text"
             class="input"
             placeholder="Enter domain name here..."
